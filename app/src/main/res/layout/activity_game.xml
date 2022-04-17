@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/tv_player2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_player1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Player1 :"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_player2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Player2 :"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_player2_score"
+        app:layout_constraintEnd_toStartOf="@+id/tv_player2_score"
+        app:layout_constraintTop_toTopOf="@+id/tv_player2_score"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/turn_of"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/fieldLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tv_player2_score"
+        app:layout_constraintStart_toStartOf="@+id/tv_player1_name" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fieldLayout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="#A1535252"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintBottom_toBottomOf="@+id/button_11"
+            app:layout_constraintEnd_toStartOf="@+id/button_11"
+            app:layout_constraintTop_toTopOf="@+id/button_11" />
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintBottom_toBottomOf="@+id/button_11"
+            app:layout_constraintStart_toEndOf="@+id/button_11"
+            app:layout_constraintTop_toTopOf="@+id/button_11" />
+
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintBottom_toTopOf="@+id/button_10"
+            app:layout_constraintEnd_toEndOf="@+id/button_10"
+            app:layout_constraintStart_toStartOf="@+id/button_10" />
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintBottom_toBottomOf="@+id/button_00"
+            app:layout_constraintStart_toEndOf="@+id/button_00"
+            app:layout_constraintTop_toTopOf="@+id/button_00" />
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintBottom_toBottomOf="@+id/button_01"
+            app:layout_constraintStart_toEndOf="@+id/button_01"
+            app:layout_constraintTop_toTopOf="@+id/button_01" />
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintEnd_toEndOf="@+id/button_10"
+            app:layout_constraintStart_toStartOf="@+id/button_10"
+            app:layout_constraintTop_toBottomOf="@+id/button_10" />
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintBottom_toBottomOf="@+id/button_20"
+            app:layout_constraintStart_toEndOf="@+id/button_20"
+            app:layout_constraintTop_toTopOf="@+id/button_20" />
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            app:backgroundTint="#CDCDCD"
+            app:layout_constraintBottom_toBottomOf="@+id/button_21"
+            app:layout_constraintStart_toEndOf="@+id/button_21"
+            app:layout_constraintTop_toTopOf="@+id/button_21" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_player1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_player1_name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_player2_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_player1_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_player1_name" />
+
+    <Button
+        android:id="@+id/btn_end_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:onClick="endGame"
+        android:text="@string/end_game_btn"
+        app:backgroundTint="@color/buttons_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_reset_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:onClick="resetGame"
+        android:text="@string/reset_game"
+        app:backgroundTint="@color/buttons_color"
+        app:layout_constraintBottom_toTopOf="@+id/btn_end_game"
+        app:layout_constraintEnd_toEndOf="@+id/btn_end_game"
+        app:layout_constraintStart_toStartOf="@+id/btn_end_game"
+        app:layout_constraintTop_toBottomOf="@+id/fieldLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
